@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Make Your Favourite Five</title>
+  <title>My Favorite Five</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -12,103 +12,102 @@
 </head>
 
 <body>
-  <!-- header section start -->
-  <header class=" header-section">
-    <div class="row m-0">
+  <!-- header  start -->
+  <header class="bg-black header-section">
+    <div class="row m-0 ">
       <div class="col-12 col-md-12 col-lg-9">
-        <h1 class="text-center mb-5 header-title">Make Your Favourite Five</h1>
-        <p class="text-center fs-4 text-light header-text">Football is the world's most popular ball game in
-          numbers
-          of
-          participants and
-          spectators.
-          the sport can be played almost anywhere, from official
-          football
-          playing fields (pitches) to gymnasiums,streets,school playgrounds, parks, or beaches.</p>
-        <img class="img-fluid position-absolute top-0 start-50 translate-middle-x pt-4" src="images/bg.png" alt="">
+        <h1 class="text-center pt-5 fw-bolder  text-warning mb-5 header-title">My Favorite Five</h1>
+        <p class="text-center fs-5  text-light header-text">Football for the Goals is a UN initiative to advocate for the SDGs in the football world. Click here to learn more about
+        what Football for the Goals is, and why it is important. Browse Blog. Make A Donation. View Events.</p>
+        
       </div>
       <div class="col-12 col-md-12 col-lg-3">
-        <img class="img-fluid banner-img" src="images/Banner Image.png" alt="">
+        <img class="img-fluid banner-img" src="images/World Cup.png" alt="">
       </div>
     </div>
   </header>
-  <!-- header section end -->
-  <!-- main section start -->
-  <main class="bg-dark">
+  <!-- header end -->
+
+
+
+
+  <!-- main start -->
+  <main class="bg-secondary">
     <section class="container py-5">
       <div class="row">
         <div class="col-lg-10">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100 grid-margin bg-dark border-1 border-secondary">
-                <img class="card-img rounded-top img-fluid" src="images/Ronaldo.jpg" alt="...">
+                <img class="card-img rounded-top img-fluid" src="images/Ronaldo.jpeg" alt="...">
                 <div class="card-body">
                   <h3 id="player-1" class="card-title text-center text-light my-4">Cristiano Ronaldo
                   </h3>
                   <h4 class="card-text text-secondary text-center">46 Goals . 120 Assist</h4>
                 </div>
                 <div class="text-center my-4">
-                  <button id="select-btn" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Cristiano Ronaldo')">SELECT</button>
+                  <button id="select-btn" class="btn btn-primary fs-4 rounded-0 select-btn" 
+                  onclick="playerSelect('Cristiano Ronaldo'),this.disabled = true;" >SELECT</button>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100 grid-margin bg-dark border-1 border-secondary">
-                <img class="card-img rounded-top img-fluid" src="images/LionelMessi.jpg" alt="...">
+                <img class="card-img rounded-top img-fluid " src="images/Lionel Messi.jpg" alt="...">
                 <div class="card-body">
                   <h3 class="card-title text-center text-light my-4">Lionel Messi</h3>
                   <h4 class="card-text text-secondary text-center">40 Goals . 120 Assist</h4>
                 </div>
                 <div class="text-center my-4">
-                  <button id="select-btn" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Lionel Messi')">SELECT</button>
+                  <button id="select-btn" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Lionel Messi'),this.disabled = true;">SELECT</button>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100 grid-margin bg-dark border-1 border-secondary">
-                <img class="card-img img-fluid" src="images/Neymar.jpg" alt="...">
+                <img class="card-img img-fluid" src="images/Neymar Jr..jpg" alt="...">
                 <div class="card-body">
                   <h3 class="card-title text-center text-light my-4">Neymar Jr.</h3>
                   <h4 class="card-text text-secondary text-center">40 Goals . 120 Assist</h4>
                 </div>
                 <div class="text-center my-4">
-                  <button id="select-btn-3" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Neymar Jr.')">SELECT</button>
+                  <button id="select-btn-3" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Neymar Jr.'),this.disabled = true;">SELECT</button>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100 grid-margin bg-dark border-1 border-secondary">
-                <img class="card-img rounded-top img-fluid" src="images/Karim-Benzema.jpeg" alt="...">
+                <img class="card-img rounded-top img-fluid" src="images/Karim Benzema.jpeg" alt="...">
                 <div class="card-body">
                   <h3 class="card-title text-center text-light my-4">Karim Benzema</h3>
                   <h4 class="card-text text-secondary text-center">40 Goals . 120 Assist</h4>
                 </div>
                 <div class="text-center my-4">
-                  <button id="select-btn-4" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Karim Benzema')">SELECT</button>
+                  <button id="select-btn-4" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Karim Benzema'),this.disabled = true;">SELECT</button>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100 grid-margin bg-dark border-1 border-secondary">
-                <img class="card-img rounded-top img-fluid" src="images/Kylian-Mbappe.jpeg" alt="...">
+                <img class="card-img rounded-top img-fluid" src="images/Kylian Mbappe.jpeg" alt="...">
                 <div class="card-body">
                   <h3 class="card-title text-center text-light my-4">Kylian Mbappe</h3>
                   <h4 class="card-text text-secondary text-center">38 Goals . 120 Assist</h4>
                 </div>
                 <div class="text-center my-4">
-                  <button id="select-btn-5" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Kylian Mbappe')">SELECT</button>
+                  <button id="select-btn-5" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Kylian Mbappe'),this.disabled = true;">SELECT</button>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100 grid-margin bg-dark border-1 border-secondary">
-                <img class="card-img rounded-top img-fluid" src="images/modric.jpg" alt="...">
+                <img class="card-img rounded-top img-fluid" src="images/Luka Modric.jpg" alt="...">
                 <div class="card-body">
                   <h3 class="card-title text-center text-light my-4">Luka Modric</h3>
                   <h4 class="card-text text-secondary text-center">36 Goals . 120 Assist</h4>
                 </div>
                 <div class="text-center my-4">
-                  <button value="Luka Modric" id="select-btn-6" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Luka Modric')">SELECT</button>
+                  <button value="Luka Modric" id="select-btn-6" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Luka Modric'),this.disabled = true;">SELECT</button>
                 </div>
               </div>
             </div>
@@ -120,19 +119,19 @@
                   <h4 class="card-text text-secondary text-center">28 Goals . 128 Assist</h4>
                 </div>
                 <div class="text-center my-4">
-                  <button id="select-btn-7" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Marcelo')">SELECT</button>
+                  <button id="select-btn-7" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Marcelo'),this.disabled = true;">SELECT</button>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100 grid-margin bg-dark border-1 border-secondary">
-                <img class="card-img rounded-top img-fluid" src="images/sergio-ramos.jpg" alt="...">
+                <img class="card-img rounded-top img-fluid" src="images/Sergio Ramos.jpg" alt="...">
                 <div class="card-body">
                   <h3 class="card-title text-center text-light my-4">Sergio Ramos</h3>
                   <h4 class="card-text text-secondary text-center">30 Goals . 120 Assist</h4>
                 </div>
                 <div class="text-center my-4">
-                  <button id="select-btn-8" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Sergio Ramos')" 
+                  <button id="select-btn-8" class="btn btn-primary fs-4 rounded-0 select-btn" onclick="playerSelect('Sergio Ramos'),this.disabled = true;" 
                   >SELECT</button>
                 </div>
               </div>
@@ -146,8 +145,8 @@
                 </div>
                 <div class="text-center my-4">
                   <button id="select-btn-9" class="btn btn-primary fs-4 rounded-0    select-btn" type="submit"
-                    onclick="playerSelect('Valverde')"
-                    onclick="disableBtn()">SELECT</button>
+                    onclick="playerSelect('Valverde'),this.disabled = true;"
+                    ">SELECT</button>
                 </div>
               </div>
             </div>
@@ -156,25 +155,25 @@
 
 
         <div class="col-lg-2">
-          <div class="bg-danger rounded-2 mt-2 selected">
+          <div class="bg-info rounded-2 mt-2 selected ">
             <h2 class="text-light text-center py-4"><u>Selected-V</u></h2>
             <ol id="order-list" class="fs-3 ms-4">
               
             </ol>
           </div>
-          <div class="rounded-2 mt-4 budget">
+          <div class="rounded-2 bg-black mt-4 budget ">
             <h2 class="text-light text-center py-4">Budget</h2>
-            <h4 class="text-center text-light">Per Player <input id="per-player-cost" class=" ms-2 w-50" type="text">
+            <h4 class="text-center text-light">Per Player <input id="per-player-cost" class="  w-50" type="text">
             </h4>
             <div class="text-center my-4">
-              <button id="calculate-btn" class="btn btn-success fs-4 rounded-0 select-btn">Calculate</button>
+              <button id="calculate-btn" class="btn btn-primary fs-4 rounded-0 select-btn">Calculate</button>
             </div>
             <h4 class="ps-3 text-light">Player Expenses: $<span id="player-expenses">00</span></h4>
-            <h4 class="ps-3 text-light my-4">Manager <input id="manager-cost" class="w-50 ms-3" type="text">
+            <h4 class="ps-1 text-light my-4">Managr <input id="manager-cost" class="w-50 " type="text">
             </h4>
-            <h4 class="ps-3 text-light ">Coach <input id="coach-cost" class="w-50 ms-5" type="text"></h4>
+            <h4 class="ps-1  text-light ">Coach <input id="coach-cost" class="w-50 " type="text"></h4>
             <div class="text-center my-4">
-              <button id="calculate-total-btn" class="btn btn-success fs-4 rounded-0 px-5 py-2">Calculate
+              <button id="calculate-total-btn" class="btn btn-primary fs-4 rounded-0  py-2">Calculate
                 Total</button>
             </div>
             <h4 class="ps-3 mb-4 text-light">Total : <span class="total">$<span id="total-cost">00</span></span></h4>
@@ -184,7 +183,7 @@
     </section>
   </main>
 
-
+  <!-- Main end -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
