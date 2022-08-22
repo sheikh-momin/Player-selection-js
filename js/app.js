@@ -1,27 +1,5 @@
-// function addFun(){
-//   const orderList =document.getElementById('ol')
-//   const newItem =document.getElementById('new-item').innerText
-//   const newListObj = document.createElement('li')
-//   if(orderList.children.length <5){
-    
-//     newListObj.innerText = newItem
-//     orderList.appendChild(newListObj)
-//   }
-//   else{
-//     alert('add error')
-//   }
-  
-// }
-// document.getElementById('btn').addEventListener('click', function(event){
-  
-//   addFun();
-//   document.getElementById('btn').disabled = true;
-// })
-
-
-
 function playerSelect(event){
-    const orderList =document.getElementById('order-list')
+  const orderList =document.getElementById('order-list')
   const newItem = document.createElement('li')
   const itemValue = event
   if(orderList.children.length <5){
@@ -30,7 +8,45 @@ function playerSelect(event){
     orderList.appendChild(newItem)
   }
   else{
-    alert('add error')
+    alert('Player list is full already')
   }
-  document.querySelectorAll('.select-btn').target.disabled = true;
 }
+
+document.getElementById('calculate-btn').addEventListener('click', ()=>{
+const orderList =document.getElementById('order-list')
+  const playerExpenses = document.getElementById('player-expenses')
+  const perPlayerCostString =document.getElementById('per-player-cost')
+  const perPlayerCostValue = perPlayerCostString.value
+  const perPlayerCost = parseInt(perPlayerCostValue)
+  const calculateExpenses= perPlayerCost * orderList.children.length
+  if (perPlayerCostString.value!== ''){
+  playerExpenses.innerText= calculateExpenses
+  perPlayerCostString.value = ''
+  }
+  else {
+    alert('Enter Player Expenses!')
+  }
+
+
+
+document.getElementById('calculate-total-btn').addEventListener('click', ()=>{
+  
+  const totalCost = document.getElementById('total-cost')
+  const managerCostString =document.getElementById('manager-cost')
+  const managerCostValue = managerCostString.value
+  const managerCost = parseInt(managerCostValue)
+  const coachCostString = document.getElementById('coach-cost')
+  const coachCostValue = coachCostString.value
+  const coachCost = parseInt(coachCostValue)
+    if(managerCostString.value !== '' && coachCostString.value !==''){
+
+      totalCost.innerText =calculateExpenses +  managerCost + coachCost
+    }
+    else{
+      alert('Enter Manager and Coach cost properly!')
+    }
+  })
+})
+
+
+
