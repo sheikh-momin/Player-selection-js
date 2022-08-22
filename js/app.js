@@ -27,7 +27,23 @@ perPlayerCostString.value = ''
 
 
 
+document.getElementById('calculate-total-btn').addEventListener('click', ()=>{
 
+const totalCost = document.getElementById('total-cost')
+const managerCostString =document.getElementById('manager-cost')
+const managerCostValue = managerCostString.value
+const managerCost = parseInt(managerCostValue)
+const coachCostString = document.getElementById('coach-cost')
+const coachCostValue = coachCostString.value
+const coachCost = parseInt(coachCostValue)
+
+
+totalCost.innerText =calculateExpenses + managerCost + coachCost
+managerCostString.value=''
+coachCostString.value=''
+
+
+})
 
 })
 
