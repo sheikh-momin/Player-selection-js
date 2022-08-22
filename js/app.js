@@ -14,6 +14,7 @@ function playerSelect(event){
   
 }
 
+
 document.getElementById('calculate-btn').addEventListener('click', ()=>{
 const orderList =document.getElementById('order-list')
 const playerExpenses = document.getElementById('player-expenses')
@@ -21,9 +22,13 @@ const perPlayerCostString =document.getElementById('per-player-cost')
 const perPlayerCostValue = perPlayerCostString.value
 const perPlayerCost = parseInt(perPlayerCostValue)
 const calculateExpenses= perPlayerCost * orderList.children.length
+if (perPlayerCostString.value!== ''){
 playerExpenses.innerText= calculateExpenses
 perPlayerCostString.value = ''
-
+}
+else {
+alert('Enter Player Expenses!')
+}
 
 
 
@@ -36,17 +41,17 @@ const managerCost = parseInt(managerCostValue)
 const coachCostString = document.getElementById('coach-cost')
 const coachCostValue = coachCostString.value
 const coachCost = parseInt(coachCostValue)
-
+if(managerCostString.value !== '' && coachCostString.value !==''){
 
 totalCost.innerText =calculateExpenses + managerCost + coachCost
 managerCostString.value=''
 coachCostString.value=''
-
-
+}
+else{
+alert('Enter Manager and Coach cost properly!')
+}
 })
-
 })
-
 
 
 
