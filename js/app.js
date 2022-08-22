@@ -14,7 +14,22 @@ function playerSelect(event){
   
 }
 
+document.getElementById('calculate-btn').addEventListener('click', ()=>{
+const orderList =document.getElementById('order-list')
+const playerExpenses = document.getElementById('player-expenses')
+const perPlayerCostString =document.getElementById('per-player-cost')
+const perPlayerCostValue = perPlayerCostString.value
+const perPlayerCost = parseInt(perPlayerCostValue)
+const calculateExpenses= perPlayerCost * orderList.children.length
+playerExpenses.innerText= calculateExpenses
+perPlayerCostString.value = ''
 
+
+
+
+
+
+})
 
 
 
